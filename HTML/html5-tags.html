@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 Tags</title>
+</head>
+	
+<body>
+	<details>
+		<summary>Click me to show details</summary>
+		
+		<p>
+			This is some content which will  be shown/hidden on click
+		</p>
+	</details>
+	
+	<br><br>
+	
+	<fieldset>
+		<legend>My Cutom Title</legend>
+		<h3>Hello World</h3>
+	</fieldset>
+	
+	<br><br>
+	
+	<pre>
+		<h1>WELCOME             TO 
+		WEB</h1>
+	</pre>
+	
+	<kbd>Ctrl+Alt+Shift+J</kbd>
+	
+	
+	<p>
+		We use <code>document.getElementById('elementName')</code> to select an element by ID.
+	</p>
+	
+	
+<pre>
+<code>
+import { mapActions, mapGetters } from "vuex";
+import Validation from "../../utils/Validation";
+
+export default {
+  data() {
+	return {
+	  validation: new Validation(),
+	  bus: {
+		name: "",
+		model: "",
+		reg_no: "",
+		color: "",
+		no_seats: 0,
+		join_date: ""
+	  }
+	};
+  },
+
+  methods: {
+	...mapActions(["addBus"]),
+
+	async handleSubmit() {
+	  await this.addBus(this.bus);
+
+	  // Validation
+	  if (this.validationErrors !== null) {
+		this.validation.setMessages(this.validationErrors.errors);
+	  } else {
+		this.bus = {};
+		// Clear the validation messages object
+		this.validation.setMessages({});
+	  }
+	}
+  },
+
+  computed: {
+	...mapGetters(["validationErrors", "formLoading"])
+  }
+};		
+</code>
+</pre>
+
+</body>
+</html>
