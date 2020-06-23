@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -7,12 +8,12 @@
 <body>
 	<form action="" method="post">
 		<label for="username">Username</label>
-		<input type="text" name="username" id="username" placeholder="Enter username">
+		<input type="text" name="username" id="username" placeholder="Enter username" required autofocus>
 		
 		<br><br>
 		
 		<label for="pass">Password</label>
-		<input type="password" name="pwd" id="pass" placeholder="Enter password">
+		<input type="password" name="pwd" id="pass" placeholder="Enter password" required >
 		
 		<br><br>
 		
@@ -44,8 +45,46 @@
 		
 		<br><br>
 		
+		
+		<textarea rows="10" cols="50" placeholder="Enter your feedback"></textarea>
+		
+		<br><br>
+		
+		<!-- HTML5 Inputs & Attributes -->
+		<input type="url" placeholder="URL">
+		
+		<br><br>
+		
+		<input type="email" placeholder="Email" readonly value="ab@gmail.com">
+		
+		<br><br>
+		
+		<input type="number" placeholder="Age" max="10" min="0">
+		
+		<br><br>
+		
+		<input type="date">
+		
+		<br><br>
+		
+		<input type="month">
+		
+		<br><br>
+		
+		<input type="week">
+		
+		<br><br>
+		
+		<input type="color">
+		
+		<br><br>
+		
+		<input type="range" min="10" max="40">
+		
+		<br><br>
+		
 		<input type="submit" value="Login">
-		<input type="reset" value="Reset Fields">
+		<input type="reset" value="Reset Fields" disabled>
 	</form>
 </body>
 
