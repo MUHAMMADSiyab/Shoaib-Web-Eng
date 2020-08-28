@@ -1,0 +1,48 @@
+@keyframes myAnimation {
+  /* from {
+    background: orange;
+  }
+
+  to {
+    background: purple;
+  } */
+
+  0% {
+    background: #000;
+  }
+
+  25% {
+    background: purple;
+    transform: rotate(45deg);
+  }
+
+  50% {
+    background: pink;
+    border-radius: 100%;
+  }
+
+  75% {
+    background: green;
+    opacity: 0.5;
+  }
+
+  100% {
+    background: blue;
+    transform: scale(0.5, 0.5);
+  }
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  background: orange;
+  margin: 30px auto;
+  /* animation-name: myAnimation;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; */
+
+  animation: myAnimation 8s cubic-bezier(1, -0.12, 0, 1.68) forwards;
+}
