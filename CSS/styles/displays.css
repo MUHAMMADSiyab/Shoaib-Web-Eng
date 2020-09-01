@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: 30px;
+  background: rgb(4, 104, 185);
+  margin: 50px auto;
+}
+
+.container .item {
+  width: 18%;
+  height: 120px;
+  background: #fff;
+  border-radius: 15px;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  line-height: 120px;
+  text-align: center;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+h1 {
+  display: inline;
+}
+
+.paragraph a {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  background: grey;
+  color: #fff;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.box,
+.box-2 {
+  width: 300px;
+  height: 200px;
+}
+
+.main {
+  width: 500px;
+  height: 200px;
+}
+
+.box {
+  background: green;
+  float: left;
+}
+.box-2 {
+  background: purple;
+  float: right;
+}
+
+.main {
+  background: tomato;
+  float: left;
+}
