@@ -1,0 +1,25 @@
+body {
+  background: rgb(182, 0, 55);
+}
+
+.container {
+  width: 100%;
+  margin: 40px auto;
+  background: pink;
+  display: grid;
+  /* grid-template-columns: 1fr 2fr 3fr 4fr; */
+  grid-gap: 20px;
+  /* grid-template-rows: 200px 100px 150px; */
+  grid-template: 200px 100px 150px / 1fr 2fr 3fr 4fr;
+}
+
+.container .item {
+  background: #fff;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 6px solid rgb(43, 43, 43);
+}
