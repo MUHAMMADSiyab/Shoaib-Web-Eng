@@ -3,17 +3,17 @@
 :root {
   --primary-color: #5b2158;
   --primary-dark: #421940;
-  --primary-light: #ffcafc;
+  --primary-light: #f7baf4;
   --secondary: #313131;
   --secondary-light: #ebebeb;
 }
 
 * {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
 }
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -103,4 +103,95 @@ body {
   background: var(--primary-color);
   color: #fff;
   border-radius: 8px;
+}
+
+/* Mockup area */
+.mockup-area {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.mockup-area .giant-title {
+  font-size: 3.2rem;
+  color: var(--primary-light);
+  font-weight: 400;
+  margin-bottom: 10px !important;
+  width: 90%;
+}
+
+.mockup-area .lead {
+  margin-top: 0 !important;
+  color: #fff;
+  text-align: justify;
+  line-height: 27px;
+  width: 90%;
+  font-weight: 300;
+}
+
+.mockup-area .mockup-btn {
+  width: 150px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid var(--primary-light);
+  outline: none;
+  color: var(--primary-light);
+  font-size: 1.09rem;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mockup-area .mockup-btn:hover {
+  background: var(--primary-light);
+  color: var(--primary-color);
+}
+
+#team-members {
+  width: 90%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+#team-members .card {
+  background-color: #fff;
+  border: 1px solid #f7f7f7;
+  box-shadow: 1px 1px 10px rgb(231, 231, 231);
+  padding: 15px;
+  border-radius: 6px;
+}
+
+#team-members .card h3 {
+  text-align: center;
+}
+
+.d-block {
+  display: block;
+}
+
+#team-members .card small {
+  color: var(--secondary);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+#team-members .card p {
+  color: grey;
+  text-align: justify;
+  line-height: 24px;
+  font-size: 0.8rem;
+}
+
+#team-members .card .image-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 10px auto;
 }
