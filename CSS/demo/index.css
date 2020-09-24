@@ -161,10 +161,10 @@ body {
 
 #team-members .card {
   background-color: #fff;
-  border: 1px solid #f7f7f7;
-  box-shadow: 1px 1px 10px rgb(231, 231, 231);
+  /* border: 1px solid #f7f7f7; */
+  box-shadow: 1px 1px 20px rgb(241, 241, 241);
   padding: 15px;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 #team-members .card h3 {
@@ -194,4 +194,89 @@ body {
   height: 100px;
   border-radius: 100%;
   margin: 10px auto;
+}
+
+/* Top title */
+.top-title {
+  width: 30%;
+  margin: 40px auto;
+}
+.top-title h1 {
+  font-size: 2rem !important;
+  text-align: center;
+  font-weight: 700;
+}
+.top-title .line {
+  width: 100%;
+  height: 8px;
+  background: var(--primary-color);
+  border-radius: 100% 0 100% 0;
+}
+
+/* Features */
+#features {
+  width: 90%;
+  margin: 80px auto;
+  display: grid;
+  grid-gap: 70px;
+  grid-template-columns: 1fr 1fr;
+}
+
+#features .left-f h3 {
+  font-size: 2.3rem;
+}
+
+#features .left-f .f-btn {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  outline: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 1.1rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 40px;
+  transition: all 0.3s ease;
+}
+#features .left-f .f-btn:hover {
+  background: var(--primary-dark);
+  box-shadow: 0px 0px 15px rgb(226, 226, 226);
+}
+
+#features .left-f p {
+  font-size: 0.99rem;
+  color: rgb(119, 119, 119);
+  text-align: justify;
+  line-height: 33px;
+}
+
+#features .right-f .f-image {
+  width: 100%;
+  height: 100%;
+  background: url(./images/support-team.png) no-repeat center / cover;
+  animation: slideImages 10s linear infinite;
+}
+
+@keyframes slideImages {
+  0% {
+    background: url(./images/support-team.png) no-repeat center / cover;
+  }
+
+  25% {
+    background: url(./images/ui-ux-designer.png) no-repeat center / cover;
+  }
+
+  50% {
+    background: url(./images/busy-marketing.png) no-repeat center / cover;
+  }
+
+  75% {
+    background: url(./images/online-community.png) no-repeat center / cover;
+  }
+
+  75% {
+    background: url(./images/business-woman.png) no-repeat center / cover;
+  }
 }
