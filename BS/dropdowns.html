@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <!-- JS -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>BS4 Dropdowns</title>
+  </head>
+  <body>
+    <div class="container mt-5" style="margin-top: 200px !important">
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="btn-group dropleft">
+            <!-- Trigger -->
+            <button
+              class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+              data-toggle="dropdown"
+              id="drp"
+            >
+              Click Me
+            </button>
+
+            <!-- Menu -->
+            <div class="dropdown-menu" data-target="#drp">
+              <a href="#" class="dropdown-item">Products</a>
+
+              <a href="#" class="dropdown-item">Projects</a>
+
+              <a href="#" class="dropdown-item">Services</a>
+
+              <a href="#" class="dropdown-item">Our Team</a>
+
+              <li class="dropdown-divider"></li>
+
+              <h6 class="dropdown-header">Dropdown header</h6>
+              <a href="#" class="dropdown-item">Other</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
