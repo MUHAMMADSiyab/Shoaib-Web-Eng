@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Bootstrap Carousels</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="carousel slide" id="slider" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#slider" data-slide-to="0" class="active"></li>
+          <li data-target="#slider" data-slide-to="1" class="active"></li>
+          <li data-target="#slider" data-slide-to="2" class="active"></li>
+          <li data-target="#slider" data-slide-to="3" class="active"></li>
+        </ol>
+
+        <!-- Images -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/freeimg_89251639freejpg850.jpg" class="w-100" />
+          </div>
+
+          <div class="carousel-item">
+            <img src="./images/freeimg_91433922freejpg850.jpg" class="w-100" />
+
+            <div class="carousel-caption">
+              <h3>Los Angeles</h3>
+              <p>We had such a great time in LA!</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./images/freeimg_94050260freejpg850.jpg" class="w-100" />
+          </div>
+
+          <div class="carousel-item">
+            <img src="./images/freeimg_95959779freejpg850.jpg" class="w-100" />
+          </div>
+        </div>
+
+        <!-- Next/Prev buttons -->
+        <a href="#slider" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a href="#slider" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
